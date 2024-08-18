@@ -1,0 +1,33 @@
+/* src/components/Header.css */
+body{
+    padding-top: 60px;
+}
+
+header {
+    height: 60px;
+    background-color: #2C2B30; /* Dark Gray */
+    padding: 1em;
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 0; /* Align with the left edge */
+    width: 100vw; /* Full viewport width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+}
+
+nav a {
+    color: #D6D6D6; /* Light Gray */
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #F58F7C; /* Coral */
+    text-decoration: underline;
+}

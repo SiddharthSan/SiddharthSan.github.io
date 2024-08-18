@@ -1,0 +1,30 @@
+/* TypingEffect.css */
+.typing-container {
+    display: block; /* Change to block */
+    width: 100%; /* Full width */
+    max-width: 100%;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    color: #F58F7C;
+    padding-right: 5px;
+    margin-bottom: 20px; /* Add some bottom margin */
+}
+
+.typing-effect {
+    display: inline-block; /* Change to inline-block */
+    white-space: pre-wrap;
+    word-break: break-word;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-right: 2px solid transparent; }
+    50% { border-right: 2px solid #F58F7C; }
+}
+
+@media screen and (max-width: 600px) {
+    .typing-container {
+        font-size: 1.2em;
+    }
+}

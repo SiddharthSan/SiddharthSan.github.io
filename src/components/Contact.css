@@ -1,0 +1,71 @@
+/* In src/components/Contact.css */
+@media screen and (max-width: 600px) {
+    .card p {
+        word-break: break-word;
+    }
+    
+    .card a {
+        display: inline-block;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+        hyphens: auto;
+    }
+    
+    .card svg {
+        vertical-align: top; /* Align icon with the first line of text */
+    }
+}
+.contact {
+    padding: 2em;
+    max-width: 900px;
+    margin: auto;
+    background-color: #3A3A3A; /* Dark background, as original */
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #FFFFFF; /* White text for contrast */
+}
+
+.contact h2 {
+    color: #F58F7C; /* Original color */
+}
+
+.card {
+    padding: 1em;
+    background-color: #4F4F51; /* Original dark gray background for card */
+    border-radius: 10px;
+}
+
+.card p {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #FFFFFF; /* White text for better readability */
+}
+
+.card a {
+    color: #F58F7C; /* Original color */
+    text-decoration: none;
+    border-bottom: 1px solid #F58F7C;
+    transition: all 0.3s ease;
+    padding: 2px 4px;
+}
+
+.card a:hover {
+    color: #FFFFFF;
+    background-color: #F58F7C;
+    border-bottom: 1px solid transparent;
+}
+
+.card svg {
+    margin-right: 5px;
+    vertical-align: middle;
+    color: #F58F7C; /* Match icon color to link color */
+}
+
+/* Ensure phone number is also clearly visible */
+.card p:last-child {
+    color: #FFFFFF;
+}

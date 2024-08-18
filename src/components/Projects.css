@@ -1,0 +1,97 @@
+    /* In src/components/Projects.css */
+
+    @media screen and (max-width: 600px) {
+        .projects {
+            padding: 1em;
+            margin: 15px auto; /* Center the section */
+            width: calc(100% - 2em); /* Full width minus padding */
+        }
+
+        .project-box {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            box-sizing: border-box;
+        }
+    }
+
+    /* Ensure consistent padding for all sections */
+    .projects, .about, .experience, .contact {
+        padding: 2em;
+        max-width: 900px;
+        margin: 15px auto;
+        width: calc(100% - 4em); /* Full width minus padding */
+        box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 600px) {
+        .projects, .about, .experience, .contact {
+            padding: 1em;
+            width: calc(100% - 2em);
+        }
+    }
+
+    .projects {
+        padding: 2em;
+        max-width: 900px;
+        margin: auto;
+        background-color: #3A3A3A; /* Darker gray for better contrast */
+        margin-bottom: 1em;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        color: #D6D6D6;
+    }
+
+    .project-box {
+        padding: 1em;
+        margin-bottom: 1.5em;
+        border: 2px solid #D6D6D6;
+        border-radius: 10px;
+        background-color: #4F4F51; /* Gray */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-box h3 {
+        margin-top: 0;
+        color: #F58F7C;
+        font-weight: bold;
+    }
+
+    .project-box p, .project-box ul {
+        font-weight: normal;
+    }
+
+    .project-box ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .project-box ul li {
+        margin-bottom: 0.5em;
+    }
+
+    .github-link {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 1em;
+        font-size: 1em;
+        color: #F58F7C; /* Coral */
+        border: 2px solid #F58F7C; /* Coral */
+        border-radius: 5px;
+        text-decoration: none;
+        background-color: transparent; /* Make the background transparent */
+        text-align: center;
+    }
+
+    .github-link:hover {
+        background-color: #F58F7C; /* Coral */
+        color: #D6D6D6; /* Light Gray */
+        border: 2px solid #F58F7C; /* Coral */
+    }
+
+    .projects h2{
+        color: #F58F7C;
+    }
